@@ -16,4 +16,15 @@ public class ProductoService {
     public List<Producto> listarTodos(){
         return productoRepository.findAll();
     }
+
+
+    public Producto guardarProducto(Producto producto){
+        if (producto.getStockActual() < 0){
+            System.out.println("Lo siento, no puedes guardar productos negativos.");
+            producto.setStockActual(0);
+        }
+        return productoRepository.save(producto);
+    }
+
+
 }
