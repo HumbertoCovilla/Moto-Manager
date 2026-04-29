@@ -27,4 +27,10 @@ public class Producto {
 
     @Column(name = "stock_minimo")
     private Integer stockMinimo;
+
+    @Column(name = "categoria")
+    private String categoria;
+
+    @Column(name = "marca")
+    private String marca;
 }
