@@ -1,0 +1,124 @@
+.root{
+    -fx-background-color: #121212;
+}
+
+/* SIDEBAR ELVBOX */
+.sidebar{
+    -fx-background-color: #000000;
+    -fx-border-color: transparent #1e293b transparent transparent; /* Línea sutil a la derecha */
+    -fx-border-width: 1;
+}
+
+/* Botones del menu */
+.menu-button {
+    -fx-background-color: transparent;
+    -fx-text-fill: #deff9a;
+    -fx-font-family: "Segoe UI", sans-serif;
+    -fx-font-size: 16px;
+    -fx-alignment: center-left;
+    -fx-padding: 15 25;
+    -fx-cursor: hand;
+    -fx-border-color: transparent;
+}
+
+.menu-button:hover {
+    -fx-background-color: #1a1a1a;
+    -fx-text-fill: #deff9a; /* Tu verde neón */
+    -fx-border-color: transparent transparent transparent #deff9a;
+    -fx-border-width: 0 0 0 5; /* Línea neón a la izquierda */
+}
+
+
+.table-view{
+    -fx-background-color: transparent;
+    -fx-border-color: #deff9a;
+    -fx-border-radius: 10;
+    -fx-background-radius: 10;
+    -fx-padding: 5;
+}
+
+.table-view .colum-header{
+    -fx-background-color: #1e1e1e;
+    -fx-text-fill: #deff9a;
+    -fx-font-weight: bold;
+    -fx-border-color: transparent;
+transparent #deff9a transparent;
+}
+
+.table-view .cell{
+    -fx-text-fill: white;
+    -fx-alignment: center;
+}
+
+.button{
+    -fx-background-color: linear-gradient(to bottom right, #deff9a, #4ade80);
+    -fx-text-fill: #000000;
+    -fx-font-weight: bold;
+    -fx-background-radius: 10;
+    -fx-padding: 10 20;
+}
+
+.button:hover{
+    -fx-background-color: #deff9a;
+    -fx-effect: dropshadow(three-pass-box, rgba(222,255,154,0.6), 15, 0, 0, 0);
+}
+
+.table-view .column-header{
+    -fx-background-color: #1e1e1e;
+    -fx-border-color: transparent;
+transparent #deff9a transparent;
+    -fx-transition: 0.3s;
+}
+
+.table-view .column-header .label{
+    -fx-text-fill: #deff9a;
+    -fx-font-weight: bold;
+}
+
+.table-view .column-header:hover{
+    -fx-background-color: #2d2d2d;
+    -fx-cursor: hand;
+}
+
+.button{
+    -fx-background-color: linear-gradient(to bottom right, #deff9a, #4ade80);
+    -fx-text-fill: #000000;
+    -fx-background-radius: 15;
+    -fx-padding: 10 20;
+}
+
+.table-view .placeholder .label{
+    -fx-text-fill: #94a3b8;
+}
+
+.table-view .filler{
+    -fx-background-color: transparent;
+}
+
+.table-row-cell{
+    -fx-background-color: #121212;
+    -fx-border-color: #1e1e1e;
+transparent transparent transparent;
+}
+
+/*
+.menu-button{
+    -fx-background-color: transparent;
+    -fx-text-fill: #94a3b8;
+    -fx-alignment: center-left;
+    -fx-padding: 15 20;
+    -fx-font-size: 16px;
+    -fx-border-color: transparent;
+    -fx-pref-width: 250;
+}
+
+.menu-button:hover{
+    -fx-background-color: #1e293b;
+    -fx-text-fill: #deff9a;
+    -fx-border-color: transparent;
+transparent transparent #deff9a;
+    -fx-border-width: 0 0 0 5;
+}
+*/
+
+
