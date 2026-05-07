@@ -40,12 +40,18 @@ public class StageInitializer implements ApplicationListener<StageReadyEvent> {
             Parent dashboardRoot = dashLoader.load();
 
             //Cargamos vista de inventario
-            FXMLLoader mainLoader = new FXMLLoader(getClass().getResource("/fxml/main.fxml"));
-            mainLoader.setControllerFactory(applicationContext::getBean);
-            Parent inventoryView = mainLoader.load();
+            //FXMLLoader mainLoader = new FXMLLoader(getClass().getResource("/fxml/main.fxml"));
+            //mainLoader.setControllerFactory(applicationContext::getBean);
+            //Parent inventoryView = mainLoader.load();
 
+            FXMLLoader homeLoader = new FXMLLoader(getClass().getResource("/fxml/home.fxml"));
+            homeLoader.setControllerFactory(applicationContext::getBean);
+            Parent homeView = homeLoader.load();
             BorderPane root = (BorderPane) dashboardRoot;
-            root.setCenter(inventoryView);
+            root.setCenter(homeView);
+
+            //BorderPane root = (BorderPane) dashboardRoot;
+            //root.setCenter(inventoryView);
 
             //Mostrar la ventana principal
             Stage stage = event.getStage();

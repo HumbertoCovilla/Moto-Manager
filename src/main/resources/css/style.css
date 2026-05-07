@@ -121,4 +121,9 @@ transparent transparent #deff9a;
 }
 */
 
+.menu-button{
+    -fx-min-width: 200px;
+    -fx-pref-height: 50px;
+    -fx-background-radius: 10;
+}
 
